@@ -2,8 +2,12 @@
 (function() {
   $(document).on('change', '.js-select-city', function() {
     var $city;
-    $city = $(this).val() || 'no city selected';
-    return RAI.selectCity.save($city);
+    $city = $(this).val() || '';
+    if ($city !== '') {
+      return RAI.selectCity.enable($city);
+    } else {
+      return RAI.selectCity.disable($city);
+    }
   });
 
 }).call(this);

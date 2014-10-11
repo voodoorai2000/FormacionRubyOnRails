@@ -1,7 +1,7 @@
 .column.small-12.large-5.large-offset-2
   %label
     Encuentra un curso en tu ciudad
-    = select("city", "name", @cities.all.collect {|city| city.name}, class: 'js-select-city', prompt: 'Ciudades')
+    = select("city", "name", @cities.all.collect {|city| city.name}, {:include_blank => "Ciudades"}, {:class => "js-select-city"})
 .column.small-12.large-3.large-pull-2
-  %a.button.large.expand.js-go-city{href:""}
+  %a.button.large.expand.disabled.js-go-city{href:"", disabled: "disabled" }
     Continuar

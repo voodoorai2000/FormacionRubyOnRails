@@ -2,4 +2,11 @@
 //* Helpers clasess and useful utilities 
 //*-----------------------------------------------
 
-.brd{ border: 1px solid red;}
+.brd{ 
+  border: 1px solid red;
+}
+
+.disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+}

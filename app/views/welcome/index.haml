@@ -1,6 +1,50 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+.row
+  .column.small-12
+    %h1.text-center
+      Ruby on rails
+    %h2.text-center
+      Subtitulo Ruby on Rails
+    %h3.text-center
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore
+.row.video
+  .column.small-12.large-8.large-centered
+    .flex-video.vimeo.cover
+      %iframe{:allowfullscreen => "",                      |
+              :frameborder => "0",                         |
+              :height => "	",                             |
+              :mozallowfullscreen => "",                   | 
+              :src => "//player.vimeo.com/video/60122989", |
+              :webkitallowfullscreen => "", :width => "100%"} 
+.row.cities-select
+  %form
+  .column.small-12.large-5.large-offset-2
+    %label
+      Encuentra un curso en tu ciudad
+      %select
+        - @cities = ['Barcelona','Bilbao','La Coruña','Madrid','Mallorca','Sevilla','Valencia'];
+        - @cities.each do |city|
+          %option #{city}
+  .column.small-12.large-3.large-pull-2
+    %a.button.large.expand{href:""}
+      Continuar
+.row.tesmonials
+  .column.small-12.large-6
+    .column.small-3
+      %img{src:"http://lorempixel.com/400/400"}
+    .column.small-9
+      %blockquote
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. 
+        %footer
+          "Arthur Miller"
+  .column.small-12.large-6
+    .column.small-3
+      %img{src:"http://lorempixel.com/400/400"}
+    .column.small-9
+      %blockquote
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. 
+        %footer
+          "Arthur Miller"

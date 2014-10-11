@@ -18,11 +18,17 @@
 
 @import "foundation/manifest";
 
-// Base
+// Structuring
 // Style for structure and main elements
 
-@import "base";
+@import "layout";
 
 // Plugins
 
 // Custom
+
+@import "custom/objects/rows";
+
+// Medias Queries
+
+@import "medias";

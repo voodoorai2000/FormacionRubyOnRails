@@ -1,0 +1,36 @@
+.row.heading
+  .column.small-12
+    %h1.text-center
+      Mi primera hipótesis
+.row.video
+  .column.small-12.large-8.large-centered
+    .flex-video.vimeo.cover
+      %iframe{:allowfullscreen => "",                      |
+              :frameborder => "0",                         |
+              :height => "	",                             |
+              :mozallowfullscreen => "",                   | 
+              :src => "//player.vimeo.com/video/60122989", |
+              :webkitallowfullscreen => "", :width => "100%"}
+.row.video-description
+  .column.small-12.large-4.large-push-2
+    %h3
+      Titulo resumen video
+    %p
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  .column.small-12.large-4.large-pull-2
+    .panel
+      %h5
+        This is a regular panel.
+      %a.button.expand{href:""}
+        Descargar programa
+.row
+  .column.small-12.large-8.large-centered
+    %form
+      %label
+        Déjame tus respuestas
+        %textarea
+      %a.button.large.expand{href:""}
+        Enviar respuestas
+%footer.text-center
+  = render "shared/footer";

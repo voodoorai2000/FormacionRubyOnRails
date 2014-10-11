@@ -16,7 +16,7 @@
     };
     _save = function(city) {
       var sUrl;
-      sUrl = city !== '' ? '/cities/' + city.toLowerCase() : '';
+      sUrl = city !== '' ? '/cities/' + city : '';
       return _update(sUrl);
     };
     return {

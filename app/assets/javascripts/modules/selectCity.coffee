@@ -26,7 +26,7 @@ RAI.selectCity = do ->
   # Parse city and conveting into a valid url
   # @param {string} city The city selected.
   _save = ( city ) ->
-    sUrl =  if city isnt '' then '/cities/' + city.toLowerCase() else ''
+    sUrl =  if city isnt '' then '/cities/' + city else ''
     _update( sUrl )
   
   # Public Method

@@ -9,3 +9,4 @@ RAI.selectCity = do ->
   save : ( city ) ->
     sUrl = '/cities/' + city.toLowerCase()
     _update( sUrl )
+    

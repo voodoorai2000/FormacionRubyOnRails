@@ -1,10 +1,9 @@
-%form
-  .column.small-12.large-5.large-offset-2
-    %label
-      Encuentra un curso en tu ciudad
-      %select
-        - @cities.each do |city|
-          %option #{city.name}
-  .column.small-12.large-3.large-pull-2
-    %a.button.large.expand{href:""}
-      Continuar
+.column.small-12.large-5.large-offset-2
+  %label
+    Encuentra un curso en tu ciudad
+    %select.js-select-city
+      - @cities.each do |city|
+        %option #{city.name}
+.column.small-12.large-3.large-pull-2
+  %a.button.large.expand.js-go-city{href:""}
+    Continuar

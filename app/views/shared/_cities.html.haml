@@ -5,7 +5,7 @@
       %select
         - @cities = ['Barcelona','Bilbao','A Coruña','Madrid','Mallorca','Sevilla','Valencia'];
         - @cities.each do |city|
-          %option #{city}
+          %option #{city.name}
   .column.small-12.large-3.large-pull-2
     %a.button.large.expand{href:""}
       Continuar

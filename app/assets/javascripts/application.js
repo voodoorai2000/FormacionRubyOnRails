@@ -15,6 +15,8 @@
 //# require foundation
 //= require namespace
 //= require turbolinks
-//= require_tree .
+//= require_directory ./libs
+//= require_directory ./modules
+//= require_directory ./initializers
 
 //$(function(){ $(document).foundation(); });

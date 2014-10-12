@@ -55,6 +55,7 @@
         %label
           Unlock this course
           %input{type:"text", name: "user[email]", placeholder:"Tu email@somoscojonudos.com", autofocus: "autofocus"}
+          = form.hidden_field :city_id, value: @city.id
       .column.small-12.large-3.large-pull-1
         %button.large.expand
           Únete

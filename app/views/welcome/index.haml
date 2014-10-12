@@ -1,79 +1,228 @@
-.row
-  .column.small-12.text-center
-    = image_tag "beret.svg", {class: "beret"} 
-.row
-  .column.small-12.small-centered.medium-10
-    %h1.text-center
-      Aprende a desarrollar aplicaciones web de forma rápida, elegante y robusta con Ruby on Rails
-.row
-  .column.small-12.small-centered.medium-10
-    %h2.text-center
-      El framework open-source que usan las startups punteras, optimizado para la felicidad del programador y la productividad
-.row
-  .column.small-12
-    %h3.text-center
-      En una semana con Raimond García aprenderás haciendo,
-      interiorizarás los aspectos fundamentales de Rails.
-      Al salir del taller estarás listo para desarrollar aplicaciones reales.
+%section-heading
+  .row.logo-beret
+    .column.small-12.text-center
+      = image_tag "beret.svg", {class: "beret"} 
+  .row.landing-heading.-first
+    .column.small-12.small-centered.medium-10
+      %h1.text-center
+        Aprende a desarrollar aplicaciones web <br> de forma rápida, elegante y robusta con Ruby on Rails
+  .row.landing-heading.-second
+    .column.small-10.small-centered.medium-10
+      %h2.text-center
+        El framework open-source que usan las startups punteras,<br /> optimizado para la felicidad del   programador y la productividad
+  .row.landing-heading.-third
+    .column.small-10.small-centered
+      %h2.text-center
+        En una semana conmigo aprenderás haciendo,<br />
+        interiorizarás los aspectos fundamentales de Rails.<br />
+        Al salir del taller estarás listo para desarrollar aplicaciones reales.
+%section.cities-select
+  .row
+    .column.small-12.medium-8.medium-push-1
+      %h5 Elige la ciudad donde quieres realizar el taller
+  .row
+    = render 'shared/cities'
 
-.row.video
-  .column.small-12.medium-8.medium-centered
-    .flex-video.vimeo.cover
-      %iframe{:allowfullscreen => "",                      |
-              :frameborder => "0",                         |
-              :height => "	",                             |
-              :mozallowfullscreen => "",                   | 
-              :src => "//player.vimeo.com/video/60122989", |
-              :webkitallowfullscreen => "", :width => "100%"} 
+%section.landing-video  
+  .row
+    .column.small-12.medium-8.medium-centered
+      .flex-video.vimeo.cover
+        %iframe{:allowfullscreen => "",                      |
+                :frameborder => "0",                         |
+                :height => "	",                             |
+                :mozallowfullscreen => "",                   | 
+                :src => "//player.vimeo.com/video/60122989", |
+                :webkitallowfullscreen => "", :width => "100%"} 
 
-.row.cities-select.-top
-  = render 'shared/cities'
 
-.row.tesmonials
-  .column.small-12.medium-5.medium-offset-1
+%section.testimonials
+  .row
+    .column.small-12.medium-5.medium-offset-1
+      .column.small-12
+        %blockquote
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. 
+          %footer
+            Fulanito Gómez, Developer
+    .column.small-12.medium-5.medium-pull-1
+      .column.small-12
+        %blockquote
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. 
+          %footer
+            Fulanito Gómez, Developer
+%section.biography 
+  .row
+    .column.small-12.medium-7.medium-push-1
+      %h1
+        Más que un profesor, un amigo
+    .column.small-12.medium-7.medium-push-1
+      %p{style:"margin-top: 1rem"} Raimond Garcia lleva desarrollado aplicaciones web con Ruby on Rails desde hace 10 años.
+      %p{style:"margin-top: 1rem"} Cofundador de <a href="http://proruby.com" target="_blank">ProRuby</a> y de la Conferencia Bla bla bla   de Madrid, otra credencial, otra credencial. Le encanta ver que los alumnos entienden el material de   clase, ¡y que le cuenten que <strong>desde que trabajan con Ruby on Rails son más felices!</strong>
+    .column.medium-2.show-for-medium-only
+    .column.small-12.show-for-small-only
+      = image_tag "rai_ponencia.jpg" 
+%section.course-goal 
+  .row
+    .column.small-12.medium-8.medium-centered
+      %h2.text-center
+        Un taller en el que a los 15 minutos de empezar ya estarás peleándote con el código
+    .column.small-12{style:"margin-top: 2rem"}
+      .small-12.small-centered.medium-6.medium-offset-3
+        = image_tag "logo_ruby.jpg" 
+  .row
+    .column.small-12.medium-8.medium-centered
+      %h3
+        Qué vas a aprender
+      %p
+        Los principios básicos del lenguaje Ruby y del <a href="" target="_blank">Framework Ruby on Rails</a>.
+      %p
+        Programar en base a la architectura <a href="" target="_blank">Modelo Vista Controlador</a>, que te permitirá estructurar el código para crear una aplicación mantenible y trabajar ágilmente.
+      %p
+        <a href="" target="_blank">Test-Driven-Development</a> para dormir tranquilo por las noches sabiendo que tu código está libre de errores y despliegues a producción sin dolores de cabeza utilizando un único comando.
+%section.course-target
+  .row
+    .column.small-12.medium-8.medium-centered
+      %h3
+        A quién va dirigido el taller
+      %p
+        Estudiantes de informática y programadores de otros lenguajes.
+      %p
+        Si sabes las diferencias entre un GET y un POST, o un INSERT y un SELECT, o una clase y un método estás listo para este curso.
+      %p
+        Si no quizás deberías <a href="" target="_blank">consultarme</a>, el taller va a un ritma rápido y asumeo que ya sabes ciertas cosas de programación.
+%section.course-summary
+  .row
     .column.small-12
-      %blockquote
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. 
-        %footer
-          "Fulanito Gómez, Developer"
-  .column.small-12.medium-5.medium-pull-1
+      %h4.text-center
+        Temario
+  .row
+    .column.small-12.subject
+      <strong>Ruby</strong> · Lenguaje creado por Yukihiro Matsumoto para hacer felices a los programadores
+  .row.subject-detail
+    .column.medium-4
+      %ul.subject-detail_list
+        %li
+          Clases, Módulos y Métodos 
+        %li
+          Cadenas de texto
+    .column.medium-4
+      %ul.subject-detail_list
+        %li
+          Listas de elementos 
+        %li
+          Diccionarios clave-valor
+    .column.medium-4
+      %ul.subject-detail_list
+        %li
+          Condicionales, bucles y bloques 
+
+  .row
+    .column.small-12.subject
+      <strong>Ruby</strong> · Lenguaje creado por Yukihiro Matsumoto para hacer felices a los programadores
+  .row.subject-detail
+    .column.medium-6
+      %h4 Model
+      %ul.subject-detail_list
+        %li
+          Validations: Validaciones de campos
+        %li
+          Migrations: Actualizacion de estructura de base de datos
+        %li
+          Associations: Relaciones entre tablas
+        %li
+          Queries: Llamadas a base de datos
+        %li
+          Scopes: Reutilizaron de llamadas a bases de datos
+      %h4 View
+      %ul.subject-detail_list
+        %li
+          Templates: Editar archivos html con código ruby (ERB)
+        %li
+          Layouts: Reutilizar plantillas en diferentes páginas
+        %li
+          Partials: Reutilizar trozos de html dentro de un ERB
+        %li
+          Helpers: Extraer lógica de los archivos ERB a lib
+      %h4 Controller
+      %ul.subject-detail_list
+        %li
+          Routes: Redirigir a las acciones correspondientes para  las urls del navegador
+        %li
+          Actions: Acciones para cada url del navegador
+        %li
+          Parameters: Trabajar parámetros de las urls y formularios
+        %li
+          Filters: Ejecutar acciones previas a la acción principal 
+      %h4 Mailer
+      %ul.subject-detail_list
+        %li
+          Sending emails: Enviar emails
+      %h4 Gems
+      %ul.subject-detail_list
+        %li
+          Bundler: Instalar librerías escritas en Ruby
+    .column.medium-6
+      %h4 Asset pipeline
+      %ul.subject-detail_list
+        %li
+          CSS: Editar las hojas de estilos
+        %li
+          JS: Editar los archivos javascript
+        %li
+          Images: Añadir imágenes a archivos html-ruby
+      %h4 Command line
+      %ul.subject-detail_list
+        %li
+          Server: Lanzar el servidor  de Rails
+        %li
+          Generators: Generar sample código
+        %li
+          Console
+        %li
+          Rake
+      %h4 GIT
+      %ul.subject-detail_list
+        %li
+          Basic operations: Comandos para gestionar el repositorio  de código para el control de versiones y colaboración
+      %h4 Deploys
+      %ul.subject-detail_list
+        %li
+          Heroku: Desplegar nuestra aplicación online
+      %h4 Testing
+      %ul.subject-detail_list
+        %li
+          Unit: Testear métodos individuales
+        %li
+          Integration: Testear funcionalidades de usuario
+          
+
+%footer.main-footer
+  .row
     .column.small-12
-      %blockquote
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. 
-        %footer
-          "Fulanito Gómez, Developer"
+      %h3.text-center
+        Aprende desarrollar aplicaciones web con Ruby on Rails en una semana
+  .row
+    .column.small-12.medium-8.medium-push-1
+      %h5 Elige la ciudad donde quieres realizar el taller
+    = render 'shared/cities'
+  .row
+    .column.small-10.small-centered
+      = image_tag "footer.jpg"
+  .row.main-footer_info
+    .column.small-12
+      %p.text-center
+        Para cualquier pregunta, comentario o sugerencia podéis <a href="">contactar conmigo</a>, y así crear juntos el mejor taller de Ruby on Rails del mundo.
+  .row.logo-beret
+    .column.small-12.text-center
+      = image_tag "beret.svg", {class: "beret"} 
+  .row.main-footer_copyright
+    .colum.small-12.text-center
+      %p.copyright
+        © 2014 Raimong García. <a href="">Aviso Legal</a> | <a href="">Política de privacidad</a>.
 
-.row.biography
-  .column.small-12.medium-10.medium-centered
-    %h2
-      Más que un profesor, un amigo
-  .column.small-12.medium-7.medium-offset-1
-    %p Raimond Garcia lleva desarrollado aplicaciones web con Ruby on Rails desde hace 10 años.
-    %p Cofundador de <a href="http://proruby.com" target="_blank">ProRuby</a> y de la Conferencia Bla bla bla de Madrid, otra credencial, otra credencial. Le encanta ver que los alumnos entienden el material de clase, ¡y que le cuenten que <strong>desde que trabajan con Ruby on Rails son más felices!</strong>
-  .column.medium-4.show-for-medium-only
-  .column.small-12.show-for-small-only
-    %img{src:"http://lorempixel.com/800/500"}
 
-.row.course-outline
-  .column.small-12.medium-8.medium-centered
-    %h2.text-center
-      Un taller en el que a los 15 minutos de empezar ya estarás peleándote con el código
-  .column.small-12
-    .small-12.small-centered.medium-6.medium-offset-3
-      = image_tag "logo_ruby.jpg" 
-  .column.small-12.medium-8.medium-centered
-    %p
-      Raimond Garcia lleva desarrollado aplicaciones web con Ruby on Rails desde hace 10 años.
-    %p
-      Cofundador de <a href="http://proruby.com" target="_blank">ProRuby</a> y de la <a href="#" target="_blank">Conferencia Bla bla bla</a> de Madrid, otra credencial, otra credencial. Le encanta ver que los alumnos entienden el material de clase, ¡y que le cuenten que desde que trabajan con Ruby on Rails son más felices!
-  
-.row.cities.-bottom
-  = render 'shared/cities'
 
-%footer.text-center
-  = render "shared/footer"
 
      
 

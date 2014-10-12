@@ -14,15 +14,29 @@
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-// $base-font-size: 100%;
 
 // The $base-font-size is 100% while $base-line-height is 150%
 // $base-line-height: 150%;
+$font-family-sans-serif: "proxima-nova", "Helvetica", Helvetica, Arial, sans-serif;
 
 // We use this to control whether or not CSS classes come through in the gem files.
 $include-html-classes: true;
 // $include-print-styles: true;
 $include-html-global-classes: $include-html-classes;
+
+// We use these to control header font sizes
+$h1-font-size: rem-calc(35);
+$h2-font-size: rem-calc(31);
+$h3-font-size: rem-calc(27);
+$h4-font-size: rem-calc(23);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
+
+$base-font-size: 20px;
+$base-line-height: 29px;
+$rem-base: $base-font-size; 
+
+
 
 // Foundation
 // See doc/foundation_manifest.scss to use more components

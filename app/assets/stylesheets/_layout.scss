@@ -1,6 +1,54 @@
-.heading{}
-.video{}
-.cities-select{}
-.tesmonials{}
-.biography{}
-.course-outline{}
+
+.logo-beret{
+  padding-top: $base-unit-double;
+}
+.landing-heading{
+  margin-top: $base-unit;
+  &.-second{
+  	margin-top: $base-unit * 3;
+  }
+}
+
+.biography{
+  padding: 3rem 0;
+  * { color: $white };
+}
+.cities-select{
+  margin-top: $base-unit-double;
+}
+.landing-video {
+  margin-top: $base-unit-double;	
+}
+.testimonials{
+  margin-top: $base-unit-double;
+  padding: $base-unit 0;
+  background: #faf2cd;
+}
+.course-goal {
+  margin-top: 3 * $base-unit;
+}
+.course-summary{
+  padding: 2 * $base-unit 0;
+  background: $red;
+  * { color: $white }
+
+  .subject{
+     margin: $base-unit 0;
+  }
+}
+.main-footer{
+  padding: 2 * $base-unit 0;
+
+  .main-footer_info{
+  	margin-top: 2 * $base-unit;
+  }
+  
+  .main-footer_copyright{
+  	margin-top: 2 * $base-unit;
+  }
+  
+  .copyright{
+  	color: $iron;
+  }
+
+}

@@ -1,3 +1,4 @@
+@import "compass/typography/vertical_rhythm";
 // Config
 // Here you can override foundation conf
 
@@ -18,6 +19,10 @@
 
 @import "foundation/manifest";
 
+// Base
+// Styles regarding base
+@import "base";
+
 // Structuring
 // Style for structure and main elements
 
@@ -27,7 +32,7 @@
 
 // Custom
 
-@import "custom/objects/rows";
+@import "custom/objects/manifest";
 
 // Medias Queries
 

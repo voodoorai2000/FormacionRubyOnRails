@@ -2,8 +2,20 @@
 //* Medias Queryies 
 //*-----------------------------------------------
 
+
+@media only screen and (max-width: 40em) {
+  .biography {
+  	* { color: $black }
+  }
+  .subject-detail_list{
+  	margin: 0 $base-unit;
+  	padding: 0 $base-unit;
+  }
+} /* min-width 1025px, large screens */
+
 @media only screen and (min-width: 40.063em) {
-  .biography{
-  	background: url('http://lorempixel.com/300/400') right no-repeat;
+  .biography {
+  	background: image-url("rai_ponencia.jpg") no-repeat center center;
+    background-size: cover;
   }
 } /* min-width 1025px, large screens */

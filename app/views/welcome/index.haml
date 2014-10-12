@@ -1,16 +1,23 @@
-
-.row.heading
-  .column.small-6.small-centered
+.row
+  .column.small-12.text-center
+    = image_tag "beret.svg", {class: "beret"} 
+.row
+  .column.small-12.small-centered.medium-10
     %h1.text-center
-      Ruby on rails Subtitulo Ruby on Rails
+      Aprende a desarrollar aplicaciones web de forma rápida, elegante y robusta con Ruby on Rails
+.row
+  .column.small-12.small-centered.medium-10
+    %h2.text-center
+      El framework open-source que usan las startups punteras, optimizado para la felicidad del programador y la productividad
 .row
   .column.small-12
     %h3.text-center
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore
+      En una semana con Raimond García aprenderás haciendo,
+      interiorizarás los aspectos fundamentales de Rails.
+      Al salir del taller estarás listo para desarrollar aplicaciones reales.
 
 .row.video
-  .column.small-12.large-8.large-centered
+  .column.small-12.medium-8.medium-centered
     .flex-video.vimeo.cover
       %iframe{:allowfullscreen => "",                      |
               :frameborder => "0",                         |
@@ -23,55 +30,44 @@
   = render 'shared/cities'
 
 .row.tesmonials
-  .column.small-12.large-6
-    .column.small-3
-      %img{src:"http://lorempixel.com/400/400"}
-    .column.small-9
+  .column.small-12.medium-5.medium-offset-1
+    .column.small-12
       %blockquote
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. 
         %footer
-          "Arthur Miller"
-  .column.small-12.large-6
-    .column.small-3
-      %img{src:"http://lorempixel.com/400/400"}
-    .column.small-9
+          "Fulanito Gómez, Developer"
+  .column.small-12.medium-5.medium-pull-1
+    .column.small-12
       %blockquote
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. 
         %footer
-          "Arthur Miller"
+          "Fulanito Gómez, Developer"
 
 .row.biography
-  .column.small-12
+  .column.small-12.medium-10.medium-centered
     %h2
-      Raimond Garcia
-  .column.small-12.large-4
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco
-  .column.small-12.large-4
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco
-  .column.large-4.show-for-large-only
-  .column.small-12.hide-for-large-only
+      Más que un profesor, un amigo
+  .column.small-12.medium-7.medium-offset-1
+    %p Raimond Garcia lleva desarrollado aplicaciones web con Ruby on Rails desde hace 10 años.
+    %p Cofundador de <a href="http://proruby.com" target="_blank">ProRuby</a> y de la Conferencia Bla bla bla de Madrid, otra credencial, otra credencial. Le encanta ver que los alumnos entienden el material de clase, ¡y que le cuenten que <strong>desde que trabajan con Ruby on Rails son más felices!</strong>
+  .column.medium-4.show-for-medium-only
+  .column.small-12.show-for-small-only
     %img{src:"http://lorempixel.com/800/500"}
 
 .row.course-outline
+  .column.small-12.medium-8.medium-centered
+    %h2.text-center
+      Un taller en el que a los 15 minutos de empezar ya estarás peleándote con el código
   .column.small-12
-    %h2
-      Temario
-  .column.small-12
-    .small-8
-      %h3
-        Lorem ipsum dolor sit amet, consectetur adipisicing.
-  - (1..3).each do |city|
-    .column.small-12.medium-4
-      %ul
-      - (1..3).each do |city|
-        %li
-          Lorem ipsum dolor Lorem ipsum ipsum
+    .small-12.small-centered.medium-6.medium-offset-3
+      = image_tag "logo_ruby.jpg" 
+  .column.small-12.medium-8.medium-centered
+    %p
+      Raimond Garcia lleva desarrollado aplicaciones web con Ruby on Rails desde hace 10 años.
+    %p
+      Cofundador de <a href="http://proruby.com" target="_blank">ProRuby</a> y de la <a href="#" target="_blank">Conferencia Bla bla bla</a> de Madrid, otra credencial, otra credencial. Le encanta ver que los alumnos entienden el material de clase, ¡y que le cuenten que desde que trabajan con Ruby on Rails son más felices!
   
 .row.cities.-bottom
   = render 'shared/cities'

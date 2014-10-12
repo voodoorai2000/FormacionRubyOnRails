@@ -24,13 +24,17 @@
           %li
             Lorem ipsum dolor sit amet 
   = form_for @user do |form|
-    .column.small-12.large-7.large-push-1
-      %label
-        Unlock this course
-        %input{type:"text", name: "user[email]", placeholder:"Tu email@somoscojonudos.com", autofocus: "autofocus"}
-    .column.small-12.large-3.large-pull-1
-      %button.large.expand
-        Únete
+    - if registered?
+      Share links
+    - else
+      .column.small-12.large-7.large-push-1
+        %label
+          Unlock this course
+          %input{type:"text", name: "user[email]", placeholder:"Tu email@somoscojonudos.com", autofocus: "autofocus"}
+      .column.small-12.large-3.large-pull-1
+        %button.large.expand
+          Únete
+
 
 - if registered?
   .row.next

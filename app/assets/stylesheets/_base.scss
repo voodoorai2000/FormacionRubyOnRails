@@ -4,26 +4,25 @@ h1{
   font-weight: 700;
 }
 h2{
-  font-size: 1.389em;
-  line-height: 1.288em;
-  font-weight: 100;
+  font-size: 1.289em;
+  line-height: 1.188em;
+  font-weight: 700;
 }
 h3{
-  font-size: 25px;
-  border: 1px solid red; //flag 		
+  font-size: 25px;		
 }
 h4{
   font-size: 20px;
-  border: 1px solid red; //flag 
 }
-h5{
-  font-weight: 700;
+h5{ 
+  font-size: 1em;
+  font-weight: 600;
 }
 
 blockquote{
   border-left: none;
   footer{
-  	font-size: 95%;
+  	font-size: 90%;
   	color: $aluminum;
   	&:before{
   	  content: ' - ';

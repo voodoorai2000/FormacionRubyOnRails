@@ -31,10 +31,6 @@
   padding: 2 * $base-unit 0;
   background: $red;
   * { color: $white }
-
-  .subject{
-     margin: $base-unit 0;
-  }
 }
 .main-footer{
   padding: 2 * $base-unit 0;
@@ -46,7 +42,7 @@
   .main-footer_copyright{
   	margin-top: 2 * $base-unit;
   }
-  
+
   .copyright{
   	color: $iron;
   }

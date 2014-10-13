@@ -1,0 +1,45 @@
+//*-----------------------------------------------
+//* UI: course 
+//*-----------------------------------------------
+
+.course-subject{
+   margin: $base-unit 0;
+   > p{
+  	font-size: 1.2em;
+   }
+}
+.course-subject-detail{
+  padding-left: $base-unit;
+
+  h4{
+  	font-size: 1.1em;
+  	margin-bottom: .5em;
+  }  
+  .-first {
+    &:after{
+      background: rgba(255,255,255,.4);
+      content: '';
+      display: inline-block;
+      height: 100%;
+      left: 97%;
+      position: absolute;
+      top: 0;
+      width: 1px;
+    }
+  }
+}
+.course-subject-detail_list{
+	font-size: .8em;
+	line-height: 1.9em;
+	list-style: none;
+	margin-left: 0;
+	padding-left: $base-unit;
+	> li{
+		&:before{
+		  content:"-";
+		  display: inline-block;
+          margin-left: -$base-unit; 
+		  width: $base-unit;
+		}
+	}
+}

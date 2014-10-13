@@ -4,12 +4,23 @@
 
 
 @media only screen and (max-width: 40em) {
+  
+  // Changing color due to change of bg
   .biography {
   	* { color: $black }
   }
-  .subject-detail_list{
+
+  // Cleaning sepration between lists
+  .course-subject-detail_list{
   	margin: 0 $base-unit;
   	padding: 0 $base-unit;
+  }
+
+  // Removing separation betwen bloqs
+  .course-subject-detail{
+  	.-first{
+  		&:after{ display: none }
+  	}
   }
 } /* min-width 1025px, large screens */
 

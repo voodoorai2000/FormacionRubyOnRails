@@ -20,7 +20,7 @@
   .row
     .column.small-12.medium-8.medium-push-1
       %h5 Elige la ciudad donde quieres realizar el taller
-  .row.cities-select
+  .row
     = render 'cities/cities'
 
 %section.landing-video  
@@ -35,168 +35,170 @@
                 :webkitallowfullscreen => "", :width => "100%"} 
 
 
-
-
 %section.testimonials
   .row
     .column.small-12.medium-5.medium-offset-1
       .column.small-12
         %blockquote
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. 
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua." 
           %footer
             Fulanito Gómez, Developer
     .column.small-12.medium-5.medium-pull-1
       .column.small-12
         %blockquote
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. 
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua."
           %footer
             Fulanito Gómez, Developer
 %section.biography 
   .row
     .column.small-12.medium-7.medium-push-1
-      %h1
-        Más que un profesor, un amigo
+      %h2
+        %strong 
+          Soy Raimond García, yo seré tu profesor
     .column.small-12.medium-7.medium-push-1
       %p{style:"margin-top: 1rem"} Raimond Garcia lleva desarrollado aplicaciones web con Ruby on Rails desde hace 10 años.
       %p{style:"margin-top: 1rem"} Cofundador de <a href="http://proruby.com" target="_blank">ProRuby</a> y de la Conferencia Bla bla bla   de Madrid, otra credencial, otra credencial. Le encanta ver que los alumnos entienden el material de   clase, ¡y que le cuenten que <strong>desde que trabajan con Ruby on Rails son más felices!</strong>
     .column.medium-2.show-for-medium-only
     .column.small-12.show-for-small-only
       = image_tag "rai_ponencia.jpg" 
-%section.course-goal 
-  .row
-    .column.small-12.medium-8.medium-centered
-      %h2.text-center
-        Un taller en el que a los 15 minutos de empezar ya estarás peleándote con el código
-    .column.small-12{style:"margin-top: 2rem"}
-      .small-12.small-centered.medium-6.medium-offset-3
-        = image_tag "logo_ruby.jpg" 
-  .row
-    .column.small-12.medium-8.medium-centered
-      %h3
-        Qué vas a aprender
-      %p
-        Los principios básicos del lenguaje Ruby y del <a href="" target="_blank">Framework Ruby on Rails</a>.
-      %p
-        Programar en base a la architectura <a href="" target="_blank">Modelo Vista Controlador</a>, que te permitirá estructurar el código para crear una aplicación mantenible y trabajar ágilmente.
-      %p
-        <a href="" target="_blank">Test-Driven-Development</a> para dormir tranquilo por las noches sabiendo que tu código está libre de errores y despliegues a producción sin dolores de cabeza utilizando un único comando.
-%section.course-target
-  .row
-    .column.small-12.medium-8.medium-centered
-      %h3
-        A quién va dirigido el taller
-      %p
-        Estudiantes de informática y programadores de otros lenguajes.
-      %p
-        Si sabes las diferencias entre un GET y un POST, o un INSERT y un SELECT, o una clase y un método estás listo para este curso.
-      %p
-        Si no quizás deberías <a href="" target="_blank">consultarme</a>, el taller va a un ritma rápido y asumeo que ya sabes ciertas cosas de programación.
-%section.course-summary
-  .row
-    .column.small-12
-      %h4.text-center
-        Temario
-  .row
-    .column.small-12.subject
-      <strong>Ruby</strong> · Lenguaje creado por Yukihiro Matsumoto para hacer felices a los programadores
-  .row.subject-detail
-    .column.medium-4
-      %ul.subject-detail_list
-        %li
-          Clases, Módulos y Métodos 
-        %li
-          Cadenas de texto
-    .column.medium-4
-      %ul.subject-detail_list
-        %li
-          Listas de elementos 
-        %li
-          Diccionarios clave-valor
-    .column.medium-4
-      %ul.subject-detail_list
-        %li
-          Condicionales, bucles y bloques 
-
-  .row
-    .column.small-12.subject
-      <strong>Ruby</strong> · Lenguaje creado por Yukihiro Matsumoto para hacer felices a los programadores
-  .row.subject-detail
-    .column.medium-6
-      %h4 Model
-      %ul.subject-detail_list
-        %li
-          Validations: Validaciones de campos
-        %li
-          Migrations: Actualizacion de estructura de base de datos
-        %li
-          Associations: Relaciones entre tablas
-        %li
-          Queries: Llamadas a base de datos
-        %li
-          Scopes: Reutilizaron de llamadas a bases de datos
-      %h4 View
-      %ul.subject-detail_list
-        %li
-          Templates: Editar archivos html con código ruby (ERB)
-        %li
-          Layouts: Reutilizar plantillas en diferentes páginas
-        %li
-          Partials: Reutilizar trozos de html dentro de un ERB
-        %li
-          Helpers: Extraer lógica de los archivos ERB a lib
-      %h4 Controller
-      %ul.subject-detail_list
-        %li
-          Routes: Redirigir a las acciones correspondientes para  las urls del navegador
-        %li
-          Actions: Acciones para cada url del navegador
-        %li
-          Parameters: Trabajar parámetros de las urls y formularios
-        %li
-          Filters: Ejecutar acciones previas a la acción principal 
-      %h4 Mailer
-      %ul.subject-detail_list
-        %li
-          Sending emails: Enviar emails
-      %h4 Gems
-      %ul.subject-detail_list
-        %li
-          Bundler: Instalar librerías escritas en Ruby
-    .column.medium-6
-      %h4 Asset pipeline
-      %ul.subject-detail_list
-        %li
-          CSS: Editar las hojas de estilos
-        %li
-          JS: Editar los archivos javascript
-        %li
-          Images: Añadir imágenes a archivos html-ruby
-      %h4 Command line
-      %ul.subject-detail_list
-        %li
-          Server: Lanzar el servidor  de Rails
-        %li
-          Generators: Generar sample código
-        %li
-          Console
-        %li
-          Rake
-      %h4 GIT
-      %ul.subject-detail_list
-        %li
-          Basic operations: Comandos para gestionar el repositorio  de código para el control de versiones y colaboración
-      %h4 Deploys
-      %ul.subject-detail_list
-        %li
-          Heroku: Desplegar nuestra aplicación online
-      %h4 Testing
-      %ul.subject-detail_list
-        %li
-          Unit: Testear métodos individuales
-        %li
-          Integration: Testear funcionalidades de usuario
+%section.course
+  %article.course-goal 
+    .row
+      .column.small-12.medium-8.medium-centered
+        %h2.text-center
+          Un taller en el que a los 15 minutos de empezar ya estarás peleándote con el código
+      .column.small-12{style:"margin-top: 2rem"}
+        .small-12.small-centered.medium-6.medium-offset-3
+          = image_tag "logo_ruby.jpg" 
+    .row
+      .column.small-12.medium-8.medium-centered
+        %h3
+          Qué vas a aprender
+        %p
+          Los principios básicos del lenguaje Ruby y del <a href="" target="_blank">Framework Ruby on Rails</a>.
+        %p
+          Programar en base a la architectura <a href="" target="_blank">Modelo Vista Controlador</a>, que te   permitirá estructurar el código para crear una aplicación mantenible y trabajar ágilmente.
+        %p
+          <a href="" target="_blank">Test-Driven-Development</a> para dormir tranquilo por las noches sabiendo que tu   código está libre de errores y despliegues a producción sin dolores de cabeza utilizando un único comando.
+  %article.course-target
+    .row
+      .column.small-12.medium-8.medium-centered
+        %h3
+          A quién va dirigido el taller
+        %p
+          Estudiantes de informática y programadores de otros lenguajes.
+        %p
+          Si sabes las diferencias entre un GET y un POST, o un INSERT y un SELECT, o una clase y un método estás   listo para este curso.
+        %p
+          Si no quizás deberías <a href="" target="_blank">consultarme</a>, el taller va a un ritma rápido y asumeo   que ya sabes ciertas cosas de programación.
+  %article.course-summary
+    .row
+      .column.small-12
+        %h2.text-center
+          Temario
+    .row
+      .column.small-12.course-subject
+        %p
+          <strong>Ruby</strong> · Lenguaje creado por Yukihiro Matsumoto para hacer felices a los programadores
+    .row.course-subject-detail
+      .column.medium-4
+        %ul.course-subject-detail_list
+          %li
+            Clases, Módulos y Métodos 
+          %li
+            Cadenas de texto
+      .column.medium-4
+        %ul.course-subject-detail_list
+          %li
+            Listas de elementos 
+          %li
+            Diccionarios clave-valor
+      .column.medium-4
+        %ul.course-subject-detail_list
+          %li
+            Condicionales, bucles y bloques 
+  
+    .row
+      .column.small-12.course-subject
+        %p
+          <strong>Rails</strong> · Framework escrito en Ruby para desarrollo web rápido, elegante y robusto
+    .row.course-subject-detail
+      .column.-first.medium-6
+        %h4 Model
+        %ul.course-subject-detail_list
+          %li
+            <i>Validations:</i> Validaciones de campos
+          %li
+            <i>Migrations:</i> Actualizacion de estructura de base de datos
+          %li
+            <i>Associations:</i> Relaciones entre tablas
+          %li
+            <i>Queries:</i> Llamadas a base de datos
+          %li
+            <i>Scopes:</i> Reutilizaron de llamadas a bases de datos
+        %h4 View
+        %ul.course-subject-detail_list
+          %li
+            <i>Templates:</i> Editar archivos html con código ruby (ERB)
+          %li
+            <i>Layouts:</i> Reutilizar plantillas en diferentes páginas
+          %li
+            <i>Partials:</i> Reutilizar trozos de html dentro de un ERB
+          %li
+            <i>Helpers:</i> Extraer lógica de los archivos ERB a lib
+        %h4 Controller
+        %ul.course-subject-detail_list
+          %li
+            <i>Routes:</i> Redirigir a las acciones correspondientes<br/> para las urls del navegador
+          %li
+            <i>Actions:</i> Acciones para cada url del navegador
+          %li
+            <i>Parameters:</i> Trabajar parámetros de las urls y formularios
+          %li
+            <i>Filters:</i> Ejecutar acciones previas a la acción principal 
+        %h4 Mailer
+        %ul.course-subject-detail_list
+          %li
+            Sending emails: Enviar emails
+        %h4 Gems
+        %ul.course-subject-detail_list
+          %li
+            Bundler: Instalar librerías escritas en Ruby
+      .column.medium-6
+        %h4 Asset pipeline
+        %ul.course-subject-detail_list
+          %li
+            <i>CSS:</i> Editar las hojas de estilos
+          %li
+            <i>JS:</i> Editar los archivos javascript
+          %li
+            <i>Images:</i> Añadir imágenes a archivos html-ruby
+        %h4 Command line
+        %ul.course-subject-detail_list
+          %li
+            <i>Server:</i> Lanzar el servidor  de Rails
+          %li
+            <i>Generators:</i> Generar sample código
+          %li
+            Console
+          %li
+            Rake
+        %h4 GIT
+        %ul.course-subject-detail_list
+          %li
+            <i>Basic operations:</i> Comandos para gestionar el repositorio  de código para el control de   versiones y colaboración
+        %h4 Deploys
+        %ul.course-subject-detail_list
+          %li
+            <i>Heroku:</i> Desplegar nuestra aplicación online
+        %h4 Testing
+        %ul.course-subject-detail_list
+          %li
+            <i>Unit:</i> Testear métodos individuales
+          %li
+            <i>Integration:</i> Testear funcionalidades de usuario
           
 
 %footer.main-footer

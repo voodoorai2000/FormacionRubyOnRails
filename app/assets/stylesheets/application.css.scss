@@ -9,15 +9,15 @@
 
 @import "mixins";
 
-// Utilities
-// Helpers and utility classes
-
-@import "utilities";
-
 // Foundation
 // See doc/foundation_manifest.scss to use more components
 
 @import "foundation/manifest";
+
+// Utilities
+// Helpers and utility classes
+
+@import "utilities";
 
 // Base
 // Styles regarding base

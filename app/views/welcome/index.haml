@@ -1,29 +1,29 @@
-%section-heading
+%section.landing-heading
   .row.logo-beret
     .column.small-12.text-center
       = image_tag "beret.svg", {class: "beret"} 
-  .row.landing-heading.-first
+  .row.landing-heading_entry.-first
     .column.small-12.small-centered.medium-10
-      %h1.text-center
+      %h1.-smooth.text-center
         Aprende a desarrollar aplicaciones web <br> de forma rápida, elegante y robusta con Ruby on Rails
-  .row.landing-heading.-second
+  .row.landing-heading_entry.-second
     .column.small-10.small-centered.medium-10
-      %h2.text-center
+      %h2.-smooth.text-center
         El framework open-source que usan las startups punteras,<br /> optimizado para la felicidad del   programador y la productividad
-  .row.landing-heading.-third
+  .row.landing-heading_entry.-third
     .column.small-10.small-centered
-      %h2.text-center
+      %h2.-smooth.text-center
         En una semana conmigo aprenderás haciendo,<br />
         interiorizarás los aspectos fundamentales de Rails.<br />
         Al salir del taller estarás listo para desarrollar aplicaciones reales.
 %section.cities-select
   .row
     .column.small-12.medium-8.medium-push-1
-      %h5 Elige la ciudad donde quieres realizar el taller
+      %h5.space-clean Elige la ciudad donde quieres realizar el taller
   .row
     = render 'cities/cities'
 
-%section.landing-video  
+%section.landing-video 
   .row
     .column.small-12.medium-8.medium-centered
       .flex-video.vimeo.cover
@@ -54,12 +54,11 @@
 %section.biography 
   .row
     .column.small-12.medium-7.medium-push-1
-      %h2
-        %strong 
-          Soy Raimond García, yo seré tu profesor
-    .column.small-12.medium-7.medium-push-1
-      %p{style:"margin-top: 1rem"} Raimond Garcia lleva desarrollado aplicaciones web con Ruby on Rails desde hace 10 años.
-      %p{style:"margin-top: 1rem"} Cofundador de <a href="http://proruby.com" target="_blank">ProRuby</a> y de la Conferencia Bla bla bla   de Madrid, otra credencial, otra credencial. Le encanta ver que los alumnos entienden el material de   clase, ¡y que le cuenten que <strong>desde que trabajan con Ruby on Rails son más felices!</strong>
+      %h2.biography-heading.-smooth
+        Soy Raimond García, yo seré tu profesor
+    .biography-body.column.small-12.medium-7.medium-push-1
+      %p Raimond Garcia lleva desarrollado aplicaciones web con Ruby on Rails desde hace 10 años.
+      %p Cofundador de <a href="http://proruby.com" target="_blank">ProRuby</a> y de la Conferencia Bla bla bla   de Madrid, otra credencial, otra credencial. Le encanta ver que los alumnos entienden el material de   clase, ¡y que le cuenten que <strong>desde que trabajan con Ruby on Rails son más felices!</strong>
     .column.medium-2.show-for-medium-only
     .column.small-12.show-for-small-only
       = image_tag "rai_ponencia.jpg" 

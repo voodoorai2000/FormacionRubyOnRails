@@ -1,28 +1,49 @@
-
-.logo-beret{
-  padding-top: $base-unit-double;
-}
 .landing-heading{
-  margin-top: $base-unit;
-  &.-second{
-  	margin-top: $base-unit * 3;
+  margin-top: ($base-unit * 3);
+}
+.landing-heading_entry{
+  &.-first{
+    margin-top: ($base-unit * 2);
   }
+  &.-second{
+    margin-top: ($base-unit * 2.7);
+  }
+  &.-third{
+    margin-top: ($base-unit);
+  }
+}
+.cities-select{
+  margin-top: ($base-unit * 2);
 }
 
 .biography{
   padding: 3rem 0;
   * { color: $white };
 }
-.cities-select{
-  margin-top: $base-unit-double;
-}
+  .biography-heading{
+    
+  }
+
+  .biography-body{
+    >p {
+      margin-top: $base-unit;
+      text-rendering: optimizeLegibility;
+    }
+  }
+
 .landing-video {
-  margin-top: $base-unit-double;	
+  margin-top: ($base-unit * 2.5);
+  .flex-video{
+    margin-bottom: 0;
+  }	
 }
 .testimonials{
-  margin-top: $base-unit-double;
+  margin-top: ($base-unit * 3.5);
   padding: $base-unit 0;
   background: #faf2cd;
+  blockquote{
+    color: $black;
+  }
 }
 .course-goal {
   margin-top: 3 * $base-unit;

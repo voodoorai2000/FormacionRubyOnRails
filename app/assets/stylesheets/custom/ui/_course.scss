@@ -1,11 +1,28 @@
 //*-----------------------------------------------
 //* UI: course 
 //*-----------------------------------------------
+.course{ }
 
+.course-heading{
+  font-size: 1.450em;
+  line-height: 1.156em;
+  font-weight: 700; 
+}
+//*----------------------------------
+//*Headings 
+//*----------------------------------  
+
+.course-goals_goal{
+  > p{ margin-top: ($base-unit * 1.5); }
+}
+.course-target_text{
+  @extend .course-goals_goal;
+}
 .course-subject{
    margin: $base-unit 0;
    > p{
   	font-size: 1.2em;
+    font-weight: 100;
    }
 }
 .course-subject-detail{
@@ -34,12 +51,17 @@
 	list-style: none;
 	margin-left: 0;
 	padding-left: $base-unit;
+  font-weight: 100;
 	> li{
 		&:before{
 		  content:"-";
 		  display: inline-block;
-          margin-left: -$base-unit; 
+      margin-left: -$base-unit; 
 		  width: $base-unit;
 		}
 	}
+  &.-big{
+    font-size: 1em;
+    > li{ &:before{ width: .7em;  } }
+  }
 }

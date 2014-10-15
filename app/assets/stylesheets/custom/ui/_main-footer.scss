@@ -1,0 +1,28 @@
+.main-footer{
+  padding: 2 * $base-unit 0;
+
+  .main-footer_heading{
+    font-size: 1.450em;
+    line-height: 1.156em;
+    font-weight: 600;
+  }
+  .main-footer_info-text{
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  
+  .main-footer_info{
+  	margin-top: 2 * $base-unit;
+  }
+  
+  .main-footer_copyright{
+  	margin-top: 2 * $base-unit;
+  }
+
+  .copyright{
+  	color: $iron;
+    font-size: .8em;
+    > a{ color: $iron; }
+  }
+
+}

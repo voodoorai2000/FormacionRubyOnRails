@@ -1,4 +1,9 @@
-@import "compass/typography/vertical_rhythm";
+//Compass it
+@import "compass";
+
+// Normalize it
+@import "normalize";
+
 // Config
 // Here you can override foundation conf
 
@@ -37,6 +42,10 @@
 // Custom UI
 
 @import "custom/ui/manifest";
+
+// Animaciones
+
+@import "animations";
 
 // Medias Queries
 

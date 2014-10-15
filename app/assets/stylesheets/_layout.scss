@@ -12,6 +12,7 @@
     margin-top: ($base-unit);
   }
 }
+
 .cities-select{
   margin-top: ($base-unit * 2);
 }
@@ -21,13 +22,13 @@
   * { color: $white };
 }
   .biography-heading{
-    
+    font-size: 1.5em;
   }
 
   .biography-body{
     >p {
       margin-top: $base-unit;
-      text-rendering: optimizeLegibility;
+      font-weight: 100;
     }
   }
 
@@ -37,6 +38,7 @@
     margin-bottom: 0;
   }	
 }
+
 .testimonials{
   margin-top: ($base-unit * 3.5);
   padding: $base-unit 0;
@@ -45,27 +47,17 @@
     color: $black;
   }
 }
-.course-goal {
-  margin-top: 3 * $base-unit;
+
+.course-goals {
+  margin-top: ($base-unit * 3);
 }
+
+.course-target{
+  padding-bottom: ($base-unit * 2)
+}
+
 .course-summary{
   padding: 2 * $base-unit 0;
   background: $red;
   * { color: $white }
-}
-.main-footer{
-  padding: 2 * $base-unit 0;
-
-  .main-footer_info{
-  	margin-top: 2 * $base-unit;
-  }
-  
-  .main-footer_copyright{
-  	margin-top: 2 * $base-unit;
-  }
-
-  .copyright{
-  	color: $iron;
-  }
-
 }

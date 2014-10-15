@@ -1,0 +1,19 @@
+//*----------------------------------
+//* Animations
+//*----------------------------------
+
+@include keyframe('boom') {
+  0%{
+    @include transform( scale(1) );
+  }
+  50%{
+  	@include transform( scale(1.1) );
+  }
+  100%{
+    @include transform( scale(1) );
+  }
+}
+
+.boom {
+  @include experimental( animation, boom .4s 1 forwards );
+}

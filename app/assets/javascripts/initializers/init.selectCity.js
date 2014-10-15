@@ -3,6 +3,7 @@
   $(document).on('change', '.js-select-city', function() {
     var $city;
     $city = $(this).val() || '';
+    $('.js-select-city').val($city);
     if ($city !== '') {
       return RAI.selectCity.enable($city);
     } else {

@@ -4,22 +4,22 @@
       = image_tag "beret.svg", {class: "beret"} 
   .row.landing-heading_entry.-first
     .column.small-12.small-centered.medium-10
-      %h1.-smooth.text-center
+      %h1.text-center
         Aprende a desarrollar aplicaciones web <br> de forma rápida, elegante y robusta con Ruby on Rails
   .row.landing-heading_entry.-second
     .column.small-10.small-centered.medium-10
-      %h2.-smooth.text-center
+      %h2.text-center
         El framework open-source que usan las startups punteras,<br /> optimizado para la felicidad del   programador y la productividad
   .row.landing-heading_entry.-third
     .column.small-10.small-centered
-      %h2.-smooth.text-center
+      %h2.text-center
         En una semana conmigo aprenderás haciendo,<br />
         interiorizarás los aspectos fundamentales de Rails.<br />
         Al salir del taller estarás listo para desarrollar aplicaciones reales.
 %section.cities-select
   .row
     .column.small-12.medium-8.medium-push-1
-      %h5.space-clean Elige la ciudad donde quieres realizar el taller
+      %h5.strong.space-clean Elige la ciudad donde quieres realizar el taller
   .row
     = render 'cities/cities'
 
@@ -54,78 +54,78 @@
 %section.biography 
   .row
     .column.small-12.medium-7.medium-push-1
-      %h2.biography-heading.-smooth
+      %h2.biography-heading
         Soy Raimond García, yo seré tu profesor
     .biography-body.column.small-12.medium-7.medium-push-1
-      %p Raimond Garcia lleva desarrollado aplicaciones web con Ruby on Rails desde hace 10 años.
-      %p Cofundador de <a href="http://proruby.com" target="_blank">ProRuby</a> y de la Conferencia Bla bla bla   de Madrid, otra credencial, otra credencial. Le encanta ver que los alumnos entienden el material de   clase, ¡y que le cuenten que <strong>desde que trabajan con Ruby on Rails son más felices!</strong>
+      %p Llevo desarrollado aplicaciones web con Ruby on Rails desde hace 10 años.
+      %p Cofundador de <a href="http://proruby.com" class="underline" target="_blank">ProRuby</a> y de la <a href="http://proruby.com" class="underline" target="_blank">Conferencia Bla bla bla</a>   de Madrid, otra credencial, otra credencial. Le encanta ver que los alumnos entienden el material de   clase, ¡y que le cuenten que desde que trabajan con Ruby on Rails son más felices!
     .column.medium-2.show-for-medium-only
     .column.small-12.show-for-small-only
       = image_tag "rai_ponencia.jpg" 
 %section.course
-  %article.course-goal 
+  %article.course-goals 
     .row
       .column.small-12.medium-8.medium-centered
-        %h2.text-center
+        %h2.course-heading.text-center
           Un taller en el que a los 15 minutos de empezar ya estarás peleándote con el código
       .column.small-12{style:"margin-top: 2rem"}
         .small-12.small-centered.medium-6.medium-offset-3
           = image_tag "logo_ruby.jpg" 
     .row
-      .column.small-12.medium-8.medium-centered
-        %h3
+      .course-goals_goal.column.small-12.medium-8.medium-centered
+        %h4.strong
           Qué vas a aprender
         %p
-          Los principios básicos del lenguaje Ruby y del <a href="" target="_blank">Framework Ruby on Rails</a>.
+          Los principios básicos del lenguaje Ruby y del <a href="" target="_blank" class="underline">Framework Ruby on Rails</a>.
         %p
-          Programar en base a la architectura <a href="" target="_blank">Modelo Vista Controlador</a>, que te   permitirá estructurar el código para crear una aplicación mantenible y trabajar ágilmente.
+          Programar en base a la architectura <a href="" target="_blank" class="underline">Modelo Vista Controlador</a>, que te   permitirá estructurar el código para crear una aplicación mantenible y trabajar ágilmente.
         %p
-          <a href="" target="_blank">Test-Driven-Development</a> para dormir tranquilo por las noches sabiendo que tu   código está libre de errores y despliegues a producción sin dolores de cabeza utilizando un único comando.
+          <a href="" class="underline" target="_blank">Test-Driven-Development</a> para dormir tranquilo por las noches sabiendo que tu   código está libre de errores y despliegues a producción sin dolores de cabeza utilizando un único comando.
   %article.course-target
     .row
-      .column.small-12.medium-8.medium-centered
-        %h3
+      .course-target_text.column.small-12.medium-8.medium-centered
+        %h4.strong
           A quién va dirigido el taller
         %p
           Estudiantes de informática y programadores de otros lenguajes.
         %p
           Si sabes las diferencias entre un GET y un POST, o un INSERT y un SELECT, o una clase y un método estás   listo para este curso.
         %p
-          Si no quizás deberías <a href="" target="_blank">consultarme</a>, el taller va a un ritma rápido y asumeo   que ya sabes ciertas cosas de programación.
+          Si no quizás deberías <a href="" target="_blank" class="underline">consultarme</a>, el taller va a un ritma rápido y asumeo   que ya sabes ciertas cosas de programación.
   %article.course-summary
     .row
       .column.small-12
-        %h2.text-center
+        %h2.course-heading.text-center
           Temario
     .row
       .column.small-12.course-subject
         %p
-          <strong>Ruby</strong> · Lenguaje creado por Yukihiro Matsumoto para hacer felices a los programadores
+          <strong class="regular">Ruby</strong> · Lenguaje creado por Yukihiro Matsumoto para hacer felices a los programadores
     .row.course-subject-detail
       .column.medium-4
-        %ul.course-subject-detail_list
+        %ul.course-subject-detail_list.-big
           %li
             Clases, Módulos y Métodos 
           %li
             Cadenas de texto
       .column.medium-4
-        %ul.course-subject-detail_list
+        %ul.course-subject-detail_list.-big
           %li
             Listas de elementos 
           %li
             Diccionarios clave-valor
       .column.medium-4
-        %ul.course-subject-detail_list
+        %ul.course-subject-detail_list.-big
           %li
             Condicionales, bucles y bloques 
   
     .row
       .column.small-12.course-subject
         %p
-          <strong>Rails</strong> · Framework escrito en Ruby para desarrollo web rápido, elegante y robusto
+          <strong clas="regular">Rails</strong> · Framework escrito en Ruby para desarrollo web rápido, elegante y robusto
     .row.course-subject-detail
       .column.-first.medium-6
-        %h4 Model
+        %h5 Model
         %ul.course-subject-detail_list
           %li
             <i>Validations:</i> Validaciones de campos
@@ -137,7 +137,7 @@
             <i>Queries:</i> Llamadas a base de datos
           %li
             <i>Scopes:</i> Reutilizaron de llamadas a bases de datos
-        %h4 View
+        %h5 View
         %ul.course-subject-detail_list
           %li
             <i>Templates:</i> Editar archivos html con código ruby (ERB)
@@ -147,7 +147,7 @@
             <i>Partials:</i> Reutilizar trozos de html dentro de un ERB
           %li
             <i>Helpers:</i> Extraer lógica de los archivos ERB a lib
-        %h4 Controller
+        %h5 Controller
         %ul.course-subject-detail_list
           %li
             <i>Routes:</i> Redirigir a las acciones correspondientes<br/> para las urls del navegador
@@ -157,16 +157,16 @@
             <i>Parameters:</i> Trabajar parámetros de las urls y formularios
           %li
             <i>Filters:</i> Ejecutar acciones previas a la acción principal 
-        %h4 Mailer
+        %h5 Mailer
         %ul.course-subject-detail_list
           %li
             Sending emails: Enviar emails
-        %h4 Gems
+        %h5 Gems
         %ul.course-subject-detail_list
           %li
             Bundler: Instalar librerías escritas en Ruby
       .column.medium-6
-        %h4 Asset pipeline
+        %h5 Asset pipeline
         %ul.course-subject-detail_list
           %li
             <i>CSS:</i> Editar las hojas de estilos
@@ -174,7 +174,7 @@
             <i>JS:</i> Editar los archivos javascript
           %li
             <i>Images:</i> Añadir imágenes a archivos html-ruby
-        %h4 Command line
+        %h5 Command line
         %ul.course-subject-detail_list
           %li
             <i>Server:</i> Lanzar el servidor  de Rails
@@ -184,15 +184,15 @@
             Console
           %li
             Rake
-        %h4 GIT
+        %h5 GIT
         %ul.course-subject-detail_list
           %li
             <i>Basic operations:</i> Comandos para gestionar el repositorio  de código para el control de   versiones y colaboración
-        %h4 Deploys
+        %h5 Deploys
         %ul.course-subject-detail_list
           %li
             <i>Heroku:</i> Desplegar nuestra aplicación online
-        %h4 Testing
+        %h5 Testing
         %ul.course-subject-detail_list
           %li
             <i>Unit:</i> Testear métodos individuales
@@ -203,26 +203,26 @@
 %footer.main-footer
   .row
     .column.small-12
-      %h3.text-center
+      %h2.main-footer_heading.text-center
         Aprende desarrollar aplicaciones web con Ruby on Rails en una semana
-  .row
+  .row.cities-select
     .column.small-12.medium-8.medium-push-1
-      %h5 Elige la ciudad donde quieres realizar el taller
+      %h5.strong.space-clean Elige la ciudad donde quieres realizar el taller
     = render 'cities/cities'
   .row
     .column.small-10.small-centered
       = image_tag "footer.jpg"
   .row.main-footer_info
     .column.small-12
-      %p.text-center
-        Para cualquier pregunta, comentario o sugerencia podéis <a href="">contactar conmigo</a>, y así crear juntos el mejor taller de Ruby on Rails del mundo.
+      %p.main-footer_info-text.text-center
+        Para cualquier pregunta, comentario o sugerencia podéis <a href="" class="underline">contactar conmigo</a>,<br /> y así crear juntos el mejor taller de Ruby on Rails del mundo.
   .row.logo-beret
     .column.small-12.text-center
-      = image_tag "beret.svg", {class: "beret"} 
+      = image_tag "beret.svg", {class: "beret", style: "width: 70px"} 
   .row.main-footer_copyright
     .colum.small-12.text-center
       %p.copyright
-        © 2014 Raimong García. <a href="">Aviso Legal</a> | <a href="">Política de privacidad</a>.
+        © 2014 Raimong García. <a href="" class="underline">Aviso Legal</a> | <a href="" class="underline">Política de privacidad</a>.
 
      
 

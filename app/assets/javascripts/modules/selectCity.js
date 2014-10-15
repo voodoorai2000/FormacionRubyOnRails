@@ -4,11 +4,11 @@
     var $button, disable, enable, _save, _update;
     $button = $('.js-go-city');
     disable = function(city) {
-      $button.addClass('disabled').attr('disabled', 'disabled');
+      $button.removeClass('boom').addClass('disabled').attr('disabled', 'disabled');
       return _save(city);
     };
     enable = function(city) {
-      $button.removeClass('disabled').removeAttr('disabled');
+      $button.removeClass('disabled').addClass('boom').removeAttr('disabled');
       return _save(city);
     };
     _update = function(url) {

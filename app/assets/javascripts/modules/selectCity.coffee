@@ -6,6 +6,7 @@ RAI.selectCity = do ->
   # @param {string} city The city parsed.
   disable = (city)->
     $button
+    .removeClass 'boom'
     .addClass 'disabled'
     .attr('disabled','disabled')
     _save( city )
@@ -15,6 +16,7 @@ RAI.selectCity = do ->
   enable = (city)->
     $button
     .removeClass 'disabled'
+    .addClass 'boom'
     .removeAttr('disabled')
     _save( city )
 

@@ -10,7 +10,21 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+
 .space-clean{
   margin: 0;
   padding: 0;
+}
+.underline{
+  text-decoration: underline
+}
+
+.smooth{
+  font-weight: 100;
+}
+.regular{
+  font-weight: 500;
+}
+.strong{
+  font-weight: 700;
 }
